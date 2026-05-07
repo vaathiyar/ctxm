@@ -46,7 +46,7 @@ Captures non-recoverable context from the current session. Run before ending a b
    ```markdown
    TL;DR: <one sentence summary>
 
-   # <branch> — Session (YYYY-MM-DD)
+   # Session (current ISO 8601 datetime)
 
    <extracted context in natural language>
    ```

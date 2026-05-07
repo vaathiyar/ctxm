@@ -2,6 +2,7 @@
 
 A tree-style, cross-branch context manager for non-autonomous AI coding sessions for complex problems.
 
+
 ## Why CTXM ? 
 To start off, A complex problem is one that is bigger in nature and ***needs to be broken down*** into multiple sub-problems. 
 
@@ -14,6 +15,9 @@ If you are working **alongside AI** (non-autonomously), this is usually done via
 But now we are left with context that doesn't get recorded across branches - why option A was chosen over B, which approaches were tried and rejected, constraints discovered mid-session, open questions left for later. This context is lost the moment a branch-session ends.
 
 **ctxm** captures this in particular (ignoring recoverable context like code). Each branch gets a `summary.md` with non-recoverable context from that session. When you start a child branch, ctxm automatically loads the parent's context so that decisions, constraints and information don't get rediscovered.
+
+### Note: This skill is currently incompatible with `/compact` and other AI summarization commands.
+
 
 ## How it works
 
@@ -36,7 +40,7 @@ The branch name can have any number of nodes like `auth/oauth/provider-selection
 
 `/ctxm-init auth/password-reset` would automatically load the summaries from `session-management`, `oauth/provider-selection`, and any other existing branches **recursively** under `auth/`.
 
-The underlying file-system is the escape-hatch. You can simply move/rename branch folders to restructure the tree easily.
+The underlying file-system is the **escape-hatch**. You can simply move/rename branch folders to restructure the tree easily.
 
 ## Skills
 

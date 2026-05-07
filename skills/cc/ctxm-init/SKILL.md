@@ -32,3 +32,5 @@ Starts a new ctxm session for a branch. Run this at the beginning of a work sess
    ```
    <!-- ctxm-session-start branch=<branch> ts=<ISO8601 timestamp> -->
    ```
+
+6. If the user is wrapping up the session, ask if they want to run ctxm-summarize.
